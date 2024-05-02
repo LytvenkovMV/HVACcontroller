@@ -1,0 +1,171 @@
+
+#include "display.h"
+
+
+
+#ifndef __display_config_h
+#define __display_config_h
+
+/* Configuration of weekdays short format */
+#define DISPLAY_CONF_MONDAY_SHORT			"Mon"
+#define DISPLAY_CONF_TUESDAY_SHORT			"Tue"
+#define DISPLAY_CONF_WEDNESDAY_SHORT		"Wed"
+#define DISPLAY_CONF_THURSDAY_SHORT			"Thu"
+#define DISPLAY_CONF_FRIDAY_SHORT			"Fri"
+#define DISPLAY_CONF_SATURDAY_SHORT			"Sat"
+#define DISPLAY_CONF_SUNDAY_SHORT			"Sun"
+
+/* Configuration of weekdays full format */
+#define DISPLAY_CONF_MONDAY_FULL			" Monday  "
+#define DISPLAY_CONF_TUESDAY_FULL			" Tuesday "
+#define DISPLAY_CONF_WEDNESDAY_FULL			"Wednesday"
+#define DISPLAY_CONF_THURSDAY_FULL			"Thursday "
+#define DISPLAY_CONF_FRIDAY_FULL			" Friday  "
+#define DISPLAY_CONF_SATURDAY_FULL			"Saturday "
+#define DISPLAY_CONF_SUNDAY_FULL			" Sunday  "
+
+/* Configuration of months */
+#define DISPLAY_CONF_JANUARY				" January "
+#define DISPLAY_CONF_FEBRUARY				"February "
+#define DISPLAY_CONF_MARCH					"  March  "
+#define DISPLAY_CONF_APRIL					"  April  "
+#define DISPLAY_CONF_MAY					"   May   "
+#define DISPLAY_CONF_JUNE					"  June   "
+#define DISPLAY_CONF_JULY					"  July   "
+#define DISPLAY_CONF_AUGUST					" August  "
+#define DISPLAY_CONF_SEPTEMBER				"September"
+#define DISPLAY_CONF_OCTOBER				" October "
+#define DISPLAY_CONF_NOVEMBER				"November "
+#define DISPLAY_CONF_DECERMBER				"December "
+
+/* Configuration of the heating manner */
+#define DISPLAY_CONF_MANUAL					"MAN"
+#define DISPLAY_CONF_PROGRAM				"AUTO"
+#define DISPLAY_CONF_OFF					"OFF    "
+#define DISPLAY_CONF_COOLING				"COOLING"
+#define DISPLAY_CONF_COMFORT				"COMFORT"
+#define DISPLAY_CONF_ECO					"ECO    "
+#define DISPLAY_CONF_FRZ					"FRZ    "
+
+/* Configuration of the input states */
+#define DISPLAY_CONF_INPUT_RESET			"  0"
+#define DISPLAY_CONF_INPUT_SET				"  1"
+
+/* Configuration of the output states */
+#define DISPLAY_CONF_OUTPUT_OFF				"off"
+#define DISPLAY_CONF_OUTPUT_ON				" on"
+
+/* Configuration of the help lines */
+#define DISPLAY_CONF_ROTATE_TO_CHANGE		"* ROTATE TO CHANGE *"
+#define DISPLAY_CONF_PUSH_TO_CONFIRM		"* PUSH TO CONFIRM  *"
+
+/* Configuration of the question lines */
+#define DISPLAY_CONF_QUESTION					"Execute this action?"
+#define DISPLAY_CONF_NO_YES						"      NO    YES     "
+#define DISPLAY_CONF_CURSOR_IN_NO_POSITION		"      ^             "
+#define DISPLAY_CONF_CURSOR_IN_YES_POSITION		"            ^       "
+
+/* Configuration the maps of the custom characters */
+/* Character #1 */
+#define DISPLAY_CONF_CUSTOM_CHAR_01_1			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_01_2			(0b00000)
+#define DISPLAY_CONF_CUSTOM_CHAR_01_3			(0b00000)
+#define DISPLAY_CONF_CUSTOM_CHAR_01_4			(0b00000)
+#define DISPLAY_CONF_CUSTOM_CHAR_01_5			(0b00000)
+#define DISPLAY_CONF_CUSTOM_CHAR_01_6			(0b00000)
+#define DISPLAY_CONF_CUSTOM_CHAR_01_7			(0b00000)
+#define DISPLAY_CONF_CUSTOM_CHAR_01_8			(0b00000)
+
+/* Character #2 */
+#define DISPLAY_CONF_CUSTOM_CHAR_02_1			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_02_2			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_02_3			(0b00000)
+#define DISPLAY_CONF_CUSTOM_CHAR_02_4			(0b00000)
+#define DISPLAY_CONF_CUSTOM_CHAR_02_5			(0b00000)
+#define DISPLAY_CONF_CUSTOM_CHAR_02_6			(0b00000)
+#define DISPLAY_CONF_CUSTOM_CHAR_02_7			(0b00000)
+#define DISPLAY_CONF_CUSTOM_CHAR_02_8			(0b00000)
+
+/* Character #3 */
+#define DISPLAY_CONF_CUSTOM_CHAR_03_1			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_03_2			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_03_3			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_03_4			(0b00000)
+#define DISPLAY_CONF_CUSTOM_CHAR_03_5			(0b00000)
+#define DISPLAY_CONF_CUSTOM_CHAR_03_6			(0b00000)
+#define DISPLAY_CONF_CUSTOM_CHAR_03_7			(0b00000)
+#define DISPLAY_CONF_CUSTOM_CHAR_03_8			(0b00000)
+
+/* Character #4 */
+#define DISPLAY_CONF_CUSTOM_CHAR_04_1			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_04_2			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_04_3			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_04_4			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_04_5			(0b00000)
+#define DISPLAY_CONF_CUSTOM_CHAR_04_6			(0b00000)
+#define DISPLAY_CONF_CUSTOM_CHAR_04_7			(0b00000)
+#define DISPLAY_CONF_CUSTOM_CHAR_04_8			(0b00000)
+
+/* Character #5 */
+#define DISPLAY_CONF_CUSTOM_CHAR_05_1			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_05_2			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_05_3			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_05_4			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_05_5			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_05_6			(0b00000)
+#define DISPLAY_CONF_CUSTOM_CHAR_05_7			(0b00000)
+#define DISPLAY_CONF_CUSTOM_CHAR_05_8			(0b00000)
+
+/* Character #6 */
+#define DISPLAY_CONF_CUSTOM_CHAR_06_1			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_06_2			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_06_3			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_06_4			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_06_5			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_06_6			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_06_7			(0b00000)
+#define DISPLAY_CONF_CUSTOM_CHAR_06_8			(0b00000)
+
+/* Character #7 */
+#define DISPLAY_CONF_CUSTOM_CHAR_07_1			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_07_2			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_07_3			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_07_4			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_07_5			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_07_6			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_07_7			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_07_8			(0b00000)
+
+/* Character #8 */
+#define DISPLAY_CONF_CUSTOM_CHAR_08_1			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_08_2			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_08_3			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_08_4			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_08_5			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_08_6			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_08_7			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_08_8			(0b11111)
+
+/* Character #9 */
+#define DISPLAY_CONF_CUSTOM_CHAR_09_1			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_09_2			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_09_3			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_09_4			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_09_5			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_09_6			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_09_7			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_09_8			(0b11111)
+
+/* Character #10 */
+#define DISPLAY_CONF_CUSTOM_CHAR_10_1			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_10_2			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_10_3			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_10_4			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_10_5			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_10_6			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_10_7			(0b11111)
+#define DISPLAY_CONF_CUSTOM_CHAR_10_8			(0b11111)
+
+#endif /* __display_config_h */
+
+/* end of display_config.h */
